@@ -1,0 +1,102 @@
+body{
+  margin:0;
+}
+header {
+  color: black;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+}
+ul{
+  line-height:1.25em;
+  max-width:550px;
+  margin:0 auto;
+  display:inline-block;
+  text-align:left;
+ 
+}
+
+code{
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  line-height: 2;
+background-color: #f7f7f7;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+li{
+  margin: 16px 0;
+}
+
+/* The side navigation menu */
+#navbar {
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+#navbar .nav-link {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border:solid 0.5px;
+  border-right:none;
+  border-left:none;
+}
+#navbar .nav-link:last-child{
+  border-bottom:none;
+}
+
+#navbar .nav-link:hover {
+   background-color: #555;
+  color: white;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  #navbar {
+    width: 100%;
+    height: auto;
+    position: relative;  
+  }
+  #navbar .nav-link { float: left;
+  border:none;
+}
+  main {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  #navbar .nav-link {
+    text-align: center;
+    float: none;
+    text-decoration-line: none;
+  }
+  main{
+    max-width:300px;
+  }
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+main
+  {
+  margin-left: 250px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+}
+ 
